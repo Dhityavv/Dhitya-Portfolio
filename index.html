@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhitya Nurhadi - 3D Modeller</title>
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lock">
+<div id="intro" aria-label="Intro portofolio">
+  <div class="portal-stage" id="portal-stage">
+    <svg class="portal-svg" viewBox="0 0 600 600" role="img" aria-label="Geometric portal emblem">
+      <defs>
+        <radialGradient id="coreGlow"><stop offset="0" stop-color="#ddd2ff" stop-opacity=".38"/><stop offset=".48" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".48" stop-color="#d7d4ce"/><stop offset="1" stop-color="#fff"/></linearGradient>
+        <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Fine orbital guides -->
+      <g class="orbit orbit-slow" fill="none" stroke="#bdbab3" stroke-opacity=".14">
+        <circle cx="300" cy="300" r="278" stroke-width=".8"/>
+        <circle cx="300" cy="300" r="254" stroke-width=".7" stroke-dasharray="2 11"/>
+        <circle cx="300" cy="300" r="226" stroke-width=".7" stroke-dasharray="1 8"/>
+      </g>
+      <!-- Outer directional shards -->
+      <g class="outer-shards" fill="url(#silver)" stroke="#fff" stroke-opacity=".75" stroke-width="1">
+        <path d="M300 14 L321 105 L300 88 L279 105Z"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(45 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(90 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(135 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(180 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(225 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(270 300 300)"/>
+        <path d="M300 14 L321 105 L300 88 L279 105Z" transform="rotate(315 300 300)"/>
+      </g>
+      <!-- Floating angular ornaments -->
+      <g class="outer-ornaments" fill="none" stroke="url(#silver)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M126 111 l-34 -28 20 42 -32 -9"/><path d="M474 111 l34 -28 -20 42 32 -9"/>
+        <path d="M126 489 l-34 28 20 -42 -32 9"/><path d="M474 489 l34 28 -20 -42 32 9"/>
+        <path d="M68 252 q-28 28 0 56 l23 -28Z"/><path d="M532 252 q28 28 0 56 l-23 -28Z"/>
+        <path d="M68 348 q-28 -28 0 -56 l23 28Z"/><path d="M532 348 q28 -28 0 -56 l-23 28Z"/>
+      </g>
+      <g class="outer-arrows" fill="#f4f1eb">
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(22 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(67 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(112 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(157 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(202 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(247 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(292 300 300)"/>
+        <path d="M300 52 l10 35 -10 -7 -10 7Z" transform="rotate(337 300 300)"/>
+      </g>
+      <!-- Main concentric seal -->
+      <g class="seal-shell" filter="url(#softGlow)">
+        <circle cx="300" cy="300" r="202" fill="#050505" fill-opacity=".92" stroke="#f4f1eb" stroke-width="2.8"/>
+        <circle cx="300" cy="300" r="190" fill="none" stroke="#a9a69f" stroke-opacity=".55" stroke-width="1"/>
+        <circle cx="300" cy="300" r="169" fill="none" stroke="#f1eee8" stroke-width="1.8"/>
+        <circle cx="300" cy="300" r="145" fill="none" stroke="#aaa79f" stroke-opacity=".8" stroke-width="1.2"/>
+        <circle cx="300" cy="300" r="127" fill="none" stroke="#f2efe8" stroke-opacity=".72" stroke-width="1" stroke-dasharray="1.5 7"/>
+        <circle cx="300" cy="300" r="104" fill="none" stroke="#c7c3bb" stroke-opacity=".55" stroke-width="1.2"/>
+        <circle cx="300" cy="300" r="82" fill="none" stroke="#f4f1eb" stroke-width="3"/>
+      </g>
+      <!-- Rotating segmented markings -->
+      <g class="inner-ticks" fill="#f4f1eb">
+        <path d="M300 102 l6 13 -6 -3 -6 3Z"/><path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(45 300 300)"/>
+        <path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(90 300 300)"/><path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(135 300 300)"/>
+        <path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(180 300 300)"/><path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(225 300 300)"/>
+        <path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(270 300 300)"/><path d="M300 102 l6 13 -6 -3 -6 3Z" transform="rotate(315 300 300)"/>
+      </g>
+      <g class="cardinal-diamonds" fill="#0a0a0a" stroke="#f4f1eb" stroke-width="1.7">
+        <path d="M300 109 l7 9 -7 9 -7 -9Z"/><path d="M300 109 l7 9 -7 9 -7 -9Z" transform="rotate(90 300 300)"/>
+        <path d="M300 109 l7 9 -7 9 -7 -9Z" transform="rotate(180 300 300)"/><path d="M300 109 l7 9 -7 9 -7 -9Z" transform="rotate(270 300 300)"/>
+      </g>
+      <!-- Core glow and layered star -->
+      <circle class="core-glow" cx="300" cy="300" r="91" fill="url(#coreGlow)"/>
+      <g class="core-star" filter="url(#softGlow)">
+        <path d="M300 216 C309 278 322 291 384 300 C322 309 309 322 300 384 C291 322 278 309 216 300 C278 291 291 278 300 216Z" fill="url(#silver)"/>
+        <path d="M300 245 L315 285 L355 300 L315 315 L300 355 L285 315 L245 300 L285 285Z" fill="#fff" fill-opacity=".36"/>
+        <path d="M300 260 L307 293 L340 300 L307 307 L300 340 L293 307 L260 300 L293 293Z" fill="#fff" fill-opacity=".68"/>
+      </g>
+      <g class="core-cross" fill="none" stroke="#f5f1e9" stroke-opacity=".75" stroke-width=".8">
+        <circle cx="300" cy="300" r="48"/><path d="M300 194 V406 M194 300 H406" stroke-dasharray="2 8"/>
+      </g>
+    </svg>
+    <button id="enter" type="button" aria-label="Enter portfolio"><span class="sr-only">Enter portfolio</span></button>
+  </div>
+</div>
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="#top">Dhitya Nurhadi</a>
+  <div class="links"><a href="#about">About</a><a href="#karya">Projects</a><a href="#pengalaman">Experience</a><a href="#kontak">Contact</a></div>
+  <a class="btn whatsapp-btn" href="https://wa.me/6289638194578" target="_blank" rel="noopener">Let's talk</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="scene scene-left" aria-hidden="true">
+    <div class="artifact">
+      <div class="crystal">
+        <div class="crystal-face face-one"></div>
+        <div class="crystal-face face-two"></div>
+        <div class="crystal-face face-three"></div>
+        <div class="crystal-face face-four"></div>
+        <div class="crystal-core"></div>
+      </div>
+    </div>
+  </div>
+  <div class="scene" id="scene" aria-hidden="true">
+    <div class="artifact">
+      <div class="artifact-aura"></div>
+      <div class="artifact-orb"></div>
+      <div class="artifact-ring ring-one"><i></i></div>
+      <div class="artifact-ring ring-two"><i></i></div>
+      <div class="artifact-ring ring-three"><i></i></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <h1><span class="row"><span>Dhitya</span></span><span class="row"><span>Nurhadi</span></span></h1>
+    <p class="tag">3D artist from Indonesia, focused on modeling and environment design.</p>
+    <div class="cta"><a class="btn solid" href="#karya">View projects</a><a class="btn" href="#kontak">Get in touch</a></div>
+  </div>
+  <div class="meta">Based in Indonesia<br>Open to freelance projects</div>
+</header>
+
+<section id="about"><div class="wrap about">
+  <div class="about-intro rv">
+    <h2>About me</h2>
+    <div class="about-photo" aria-label="Photo frame placeholder">
+      <img class="about-photo-image" src="assets//images/profile/foto-saya.jpg" alt="Foto Dhitya">
+      <!-- Ganti placeholder di atas dengan img: <img class="about-photo-image" src="assets/foto-saya.jpg" alt="Foto Dhitya"> -->
+    </div>
+  </div>
+  <div class="rv">
+    <p>Hi! I'm <b>Dhitya</b>, an Animation student and 3D artist from Indonesia. I started learning animation in 2024, and I especially enjoy working in Blender - from creating 3D assets to building environments from scratch.</p>
+    <p>Beyond 3D, I also enjoy coding, especially building and developing WhatsApp bots with Node.js and Baileys on Pterodactyl. I like exploring new ideas, experimenting with different projects, and continuously learning through hands-on work.</p>
+  </div>
+</div></section>
+
+<section id="karya" style="padding-top:0"><div class="wrap">
+  <div class="head"><h2 class="rv">Featured Projects</h2><p class="rv">New projects are currently in the works.</p></div>
+  <div class="grid">
+    <article class="card rv"><div class="thumb"></div><div class="row"><h3>Project 01</h3><span class="pill">Coming soon</span></div></article>
+    <article class="card rv"><div class="thumb"></div><div class="row"><h3>Project 02</h3><span class="pill">Coming soon</span></div></article>
+  </div>
+  <div class="projects-footer">
+    <a class="btn view-all" href="projects.html">View all projects</a>
+  </div>
+</div></section>
+
+<section id="pengalaman" style="padding-top:0"><div class="wrap two">
+  <div class="rv experience-column"><h2>Experience</h2>
+    <div class="list experience-list">
+      <div class="item"><div><h3>3D Modeling Intern</h3><p>LYS Animation Studio. Worked on 3D modeling and environment layout, collaborated with the team, and handled revisions.</p></div><span>5 months</span></div>
+      <div class="item"><div><h3>Animation Student</h3><p>SMKN 2 Cikarang Barat, focused on 3D modeling and animation.</p></div><span>Class XI</span></div>
+    </div>
+  </div>
+  <div class="rv services-column"><h2>What I do</h2>
+    <div class="list service-list">
+      <div class="item service-item"><div><h3>3D Modeling &amp; Layout</h3><p>Creating 3D assets and arranging environments for animation.</p></div></div>
+      <div class="item service-item"><div><h3>Animation &amp; Rigging</h3><p>Basic rigging and animation for 3D scenes.</p></div></div>
+      <div class="item service-item"><div><h3>Storyboard, Animatic &amp; Lighting</h3><p>Planning shots, timing, and simple lighting for a scene.</p></div></div>
+      <div class="item service-item"><div><h3>WhatsApp Bot Development</h3><p>Building bots with Node.js and Baileys.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="kontak" class="contact"><div class="wrap">
+  <h2 class="rv" style="margin:0 auto">Get in touch</h2>
+  <a class="big rv" id="mail" href="#kontak">Send me an email</a>
+  <div class="soc rv">
+    <a class="btn" href="https://wa.me/6289638194578" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="https://github.com/Dhityavv" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.instagram.com/dhityavv/" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn" href="https://www.tiktok.com/@dhityavv" target="_blank" rel="noopener">TikTok</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>&copy; 2026 Dhitya Nurhadi</span><a href="#top">Back to top</a></div></footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
