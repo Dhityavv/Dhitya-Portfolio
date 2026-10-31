@@ -1,28 +1,47 @@
-# Portfolio Website
+# Portofolio Dhitya Nurhadi
 
-## Struktur
+Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bidang 3D modeling dan animasi. Dibuat sebagai website statis menggunakan HTML, CSS, dan JavaScript, dengan tampilan gelap dan elemen visual yang terinspirasi dari dunia 3D.
+
+## Halaman
+
+- `index.html` — halaman utama portofolio, profil, dan pilihan karya.
+- `projects.html` — arsip proyek dengan tampilan galeri dan daftar. Pilih proyek untuk membuka detailnya.
+
+## Fitur
+
+- Tata letak responsif untuk desktop dan perangkat seluler.
+- Animasi dan elemen visual CSS/SVG.
+- Galeri proyek dengan pilihan tampilan galeri atau daftar.
+- Dialog detail proyek yang mendukung gambar, deskripsi, kategori, tahun, dan peran.
+- Favicon khusus untuk identitas website.
+
+## Struktur Proyek
 
 ```text
 .
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
+├── projects.html
 ├── assets/
-│   ├── icons/
-│   ├── images/
-│   │   ├── profile/
-│   │   └── projects/
-│   └── videos/
+│   ├── favicon.svg
+│   └── images/
+│       └── profile/
+├── css/
+│   ├── style.css
+│   └── projects.css
+├── js/
+│   ├── main.js
+│   └── projects.js
 └── documents/
 ```
 
-- `css/style.css`: gaya dan layout website.
-- `js/main.js`: interaksi dan animasi website.
-- `assets/images/`: foto profil dan gambar proyek.
-- `assets/icons/`: ikon lokal.
-- `assets/videos/`: video proyek.
-- `documents/`: CV atau dokumen portofolio.
+## Menjalankan Secara Lokal
 
-Buka `index.html` di browser untuk menjalankan website.
+Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code.
+
+## Menambahkan Proyek
+
+Konten proyek di halaman `projects.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detailnya tetap konsisten. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
+
+## Deployment
+
+Website ini dapat di-deploy sebagai situs statis melalui Vercel. Jika repo GitHub sudah terhubung ke project Vercel, push ke branch deployment akan memicu deployment baru secara otomatis.
