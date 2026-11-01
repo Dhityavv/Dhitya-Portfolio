@@ -5,7 +5,7 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 ## Halaman
 
 - `index.html` — halaman utama portofolio, profil, dan pilihan karya.
-- `all-project.html` — arsip proyek dengan tampilan galeri dan daftar. Di Vercel, halaman ini dapat diakses melalui `/all-project`. Pilih proyek untuk membuka detailnya.
+- `all-project.html` — arsip proyek dengan tampilan galeri dan daftar. Di Vercel, halaman ini dapat diakses melalui `/all-project` melalui rewrite eksplisit. Pilih proyek untuk membuka detailnya.
 
 ## Fitur
 
@@ -36,7 +36,7 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 
 ## Menjalankan Secara Lokal
 
-Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code. Di Vercel, URL halaman utama menggunakan domain root dan halaman arsip proyek menggunakan `/all-project`.
+Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code. Di Vercel, URL halaman utama menggunakan domain root dan halaman arsip proyek `/all-project` diarahkan secara eksplisit ke `all-project.html`.
 
 ## Menambahkan Proyek
 
