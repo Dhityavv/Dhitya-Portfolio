@@ -122,6 +122,30 @@ h2{font-size:clamp(2.2rem,6vw,5rem);font-weight:700;letter-spacing:-.045em;line-
 .view-all{font:inherit;cursor:pointer}
 .view-all:hover{background:transparent;color:var(--fg)}
 .view-all-note{color:var(--mute);font-size:.9rem}
+.project-archive-link{flex-shrink:0}
+.project-archive-link span{font-size:1.05em}
+.project-progress{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.project-progress-counts{display:flex;gap:clamp(30px,6vw,82px)}
+.project-progress-counts p{display:flex;align-items:baseline;gap:10px;color:var(--mute);font-size:.9rem}
+.project-progress-counts strong{color:var(--fg);font-size:1.7rem;font-weight:550;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.project-progress-note{max-width:38ch;color:var(--mute);font-size:.92rem;text-align:right}
+@media(max-width:600px){
+  .project-progress{align-items:flex-start;flex-direction:column;gap:14px}
+  .project-progress-note{text-align:left}
+  .project-progress-counts{gap:28px}
+}
+@media(min-width:1100px){
+  body:not(.projects-page) .wrap{max-width:1160px}
+  body:not(.projects-page) .hero h1{font-size:clamp(3.4rem,9vw,8.5rem)}
+  body:not(.projects-page) .tag{font-size:clamp(1.05rem,1.8vw,1.4rem)}
+  body:not(.projects-page) section{padding:clamp(72px,9vw,132px) 0}
+  body:not(.projects-page) h2{font-size:clamp(2rem,5vw,4.4rem)}
+  body:not(.projects-page) .about p{font-size:clamp(1.05rem,1.55vw,1.25rem)}
+  body:not(.projects-page) .btn{padding:10px 18px;font-size:.9rem}
+  body:not(.projects-page) .grid{gap:16px}
+  body:not(.projects-page) .card{padding:15px;gap:14px;border-radius:16px}
+  body:not(.projects-page) .thumb{border-radius:10px}
+}
 
 /* experience + services */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:stretch}

@@ -40,7 +40,9 @@ Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi sepe
 
 ## Menambahkan Proyek
 
-Konten proyek di halaman `projects.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detailnya tetap konsisten. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
+Konten proyek di halaman `projects.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detail, kategori, dan statusnya tetap konsisten. Gunakan `data-status="upcoming"` untuk proyek yang belum selesai; proyek lain dihitung sebagai selesai. Isi `data-source` dengan URL source yang tersedia, atau biarkan kosong jika belum dibagikan. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
+
+Ringkasan jumlah proyek di `index.html` sengaja tetap ringkas. Perbarui angka completed/upcoming di sana saat status proyek berubah.
 
 ## Deployment
 

@@ -22,44 +22,53 @@
     <div class="archive-heading-copy">
       <p class="archive-eyebrow">PORTFOLIO <span>—</span> 2026</p>
       <h1>All projects<span class="archive-period">.</span></h1>
-      <p class="archive-description">A growing collection of 3D worlds, objects, and experiments.</p>
+      <p class="archive-description">Selected 3D modeling and animation projects.</p>
     </div>
-    <p class="archive-total"><strong>02</strong><span>PROJECTS</span></p>
+    <p class="archive-total"><strong data-project-total>02</strong><span>PROJECTS</span></p>
   </header>
 
-  <!-- Duplicate a project card and its matching row when adding a project. Keep the data-* details in sync. -->
+  <div class="project-toolbar">
+    <div class="project-filters" role="group" aria-label="Filter projects">
+      <button class="filter-option" type="button" data-filter="all" aria-pressed="true">All <span data-filter-count="all">02</span></button>
+      <button class="filter-option" type="button" data-filter="3d-modeling" aria-pressed="false">Modeling <span data-filter-count="3d-modeling">02</span></button>
+      <button class="filter-option" type="button" data-filter="animation" aria-pressed="false">Animation <span data-filter-count="animation">02</span></button>
+      <button class="filter-option" type="button" data-filter="upcoming" aria-pressed="false">Upcoming <span data-filter-count="upcoming">02</span></button>
+    </div>
+    <p class="filter-result" aria-live="polite">Showing 2 projects</p>
+  </div>
+
   <section class="project-gallery" aria-label="All projects">
     <button class="gallery-card art-one" type="button"
-      data-title="Project 01" data-category="3D Modeling" data-year="2026"
-      data-description="Project details will be added here. Replace this text with a short description of the idea, process, and tools used."
-      data-role="Modeling · Environment" data-image="">
+      data-title="Project 01" data-category="3D Modeling" data-year="2026" data-status="upcoming"
+      data-description="This project is in progress. A project overview and related files will be shared when it is ready."
+      data-role="Modeling · Environment" data-image="" data-source="">
       <span class="gallery-art" aria-hidden="true"><span class="art-orbit"></span><span class="art-object"></span><span class="art-glint"></span></span>
-      <span class="gallery-card-info"><span class="gallery-card-number">01 / 2026</span><span class="gallery-card-title">Project 01</span><span class="gallery-card-type">3D Modeling <span aria-hidden="true">↗</span></span></span>
+      <span class="gallery-card-info"><span class="gallery-card-number">01 / 2026 · UPCOMING</span><span class="gallery-card-title">Project 01</span><span class="gallery-card-type">3D Modeling <span aria-hidden="true">↗</span></span></span>
     </button>
     <button class="gallery-card art-two" type="button"
-      data-title="Project 02" data-category="Animation" data-year="2026"
-      data-description="Project details will be added here. Replace this text with a short description of the idea, process, and tools used."
-      data-role="Animation · Lighting" data-image="">
+      data-title="Project 02" data-category="Animation" data-year="2026" data-status="upcoming"
+      data-description="This project is in progress. A project overview and related files will be shared when it is ready."
+      data-role="Animation · Lighting" data-image="" data-source="">
       <span class="gallery-art" aria-hidden="true"><span class="art-orbit"></span><span class="art-object"></span><span class="art-glint"></span></span>
-      <span class="gallery-card-info"><span class="gallery-card-number">02 / 2026</span><span class="gallery-card-title">Project 02</span><span class="gallery-card-type">Animation <span aria-hidden="true">↗</span></span></span>
+      <span class="gallery-card-info"><span class="gallery-card-number">02 / 2026 · UPCOMING</span><span class="gallery-card-title">Project 02</span><span class="gallery-card-type">Animation <span aria-hidden="true">↗</span></span></span>
     </button>
   </section>
 
   <section class="project-list" aria-label="Projects in list view">
     <button class="project-row" type="button"
-      data-title="Project 01" data-category="3D Modeling" data-year="2026"
-      data-description="Project details will be added here. Replace this text with a short description of the idea, process, and tools used."
-      data-role="Modeling · Environment" data-image="">
+      data-title="Project 01" data-category="3D Modeling" data-year="2026" data-status="upcoming"
+      data-description="This project is in progress. A project overview and related files will be shared when it is ready."
+      data-role="Modeling · Environment" data-image="" data-source="">
       <span class="project-number">01</span>
-      <span class="project-info"><span class="project-title">Project 01</span><span class="project-subtitle">3D Modeling · 2026</span></span>
+      <span class="project-info"><span class="project-title">Project 01</span><span class="project-subtitle">3D Modeling · 2026 · Upcoming</span></span>
       <span class="project-open" aria-hidden="true">↗</span>
     </button>
     <button class="project-row" type="button"
-      data-title="Project 02" data-category="Animation" data-year="2026"
-      data-description="Project details will be added here. Replace this text with a short description of the idea, process, and tools used."
-      data-role="Animation · Lighting" data-image="">
+      data-title="Project 02" data-category="Animation" data-year="2026" data-status="upcoming"
+      data-description="This project is in progress. A project overview and related files will be shared when it is ready."
+      data-role="Animation · Lighting" data-image="" data-source="">
       <span class="project-number">02</span>
-      <span class="project-info"><span class="project-title">Project 02</span><span class="project-subtitle">Animation · 2026</span></span>
+      <span class="project-info"><span class="project-title">Project 02</span><span class="project-subtitle">Animation · 2026 · Upcoming</span></span>
       <span class="project-open" aria-hidden="true">↗</span>
     </button>
   </section>
@@ -90,6 +99,10 @@
         <p class="dialog-description"></p>
       </div>
       <div class="dialog-role-wrap"><span>ROLE / FOCUS</span><p class="dialog-role"></p></div>
+    </div>
+    <div class="dialog-actions">
+      <a class="btn dialog-source" href="" target="_blank" rel="noopener noreferrer" hidden>View source <span aria-hidden="true">↗</span></a>
+      <span class="dialog-source-unavailable">Source not shared yet</span>
     </div>
   </div>
 </dialog>
