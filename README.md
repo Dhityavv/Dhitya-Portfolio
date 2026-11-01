@@ -1,21 +1,21 @@
-# Portofolio Dhitya Nurhadi
+# Dhitya Nurhadi Portfolio
 
-Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bidang 3D modeling dan animasi. Dibuat sebagai website statis menggunakan HTML, CSS, dan JavaScript, dengan tampilan gelap dan elemen visual yang terinspirasi dari dunia 3D.
+A personal portfolio website showcasing work, experiments, and projects in 3D modeling and animation. Built as a static website using HTML, CSS, and JavaScript, featuring a dark theme and visual elements inspired by the world of 3D.
 
-## Halaman
+## Pages
 
-- `index.html` — halaman utama portofolio, profil, dan pilihan karya.
-- `all-project.html` — arsip proyek dengan tampilan galeri dan daftar. Di Vercel, halaman ini dapat diakses melalui `/all-project` melalui rewrite eksplisit. Pilih proyek untuk membuka detailnya.
+- `index.html` — the main portfolio page, profile, and featured projects.
+- `all-project.html` — a project archive with gallery and list views. On Vercel, this page can be accessed through `/all-project` using an explicit rewrite. Select a project to view its details.
 
-## Fitur
+## Features
 
-- Tata letak responsif untuk desktop dan perangkat seluler.
-- Animasi dan elemen visual CSS/SVG.
-- Galeri proyek dengan pilihan tampilan galeri atau daftar.
-- Dialog detail proyek yang mendukung gambar, deskripsi, kategori, tahun, dan peran.
-- Favicon khusus untuk identitas website.
+- Responsive layout for desktop and mobile devices.
+- CSS and SVG animations and visual elements.
+- Project gallery with gallery and list view options.
+- Project detail dialog supporting images, descriptions, categories, years, and roles.
+- Custom favicon for website branding.
 
-## Struktur Proyek
+## Project Structure
 
 ```text
 .
@@ -34,16 +34,18 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 └── documents/
 ```
 
-## Menjalankan Secara Lokal
+## Running Locally
 
-Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code. Di Vercel, URL halaman utama menggunakan domain root dan halaman arsip proyek `/all-project` diarahkan secara eksplisit ke `all-project.html`.
+Open `index.html` in a browser, or run the folder using an extension such as Live Server in Visual Studio Code. On Vercel, the main page uses the root domain, while the project archive page `/all-project` is explicitly routed to `all-project.html`.
 
-## Menambahkan Proyek
+## Adding Projects
 
-Konten proyek di halaman `all-project.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detail, kategori, dan statusnya tetap konsisten. Gunakan `data-status="upcoming"` untuk proyek yang belum selesai; proyek lain dihitung sebagai selesai. Isi `data-source` dengan URL source yang tersedia, atau biarkan kosong jika belum dibagikan. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
+Project content on the `all-project.html` page uses `data-*` attributes on gallery cards and list rows. When adding a project, update both views to keep the details, category, and status consistent.
 
-Ringkasan jumlah proyek di `index.html` sengaja tetap ringkas. Perbarui angka completed/upcoming di sana saat status proyek berubah.
+Use `data-status="upcoming"` for unfinished projects. Other projects are counted as completed. Set `data-source` to the available source URL, or leave it empty if the source has not been shared. If a project has an image, set `data-image` to its image path.
+
+The project summary on `index.html` is intentionally kept brief. Update the completed and upcoming project counts whenever a project status changes.
 
 ## Deployment
 
-Website ini dapat di-deploy sebagai situs statis melalui Vercel. Jika repo GitHub sudah terhubung ke project Vercel, push ke branch deployment akan memicu deployment baru secara otomatis.
+This website can be deployed as a static site using Vercel. If the GitHub repository is connected to a Vercel project, pushing to the deployment branch will automatically trigger a new deployment.
