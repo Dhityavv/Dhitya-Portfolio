@@ -19,19 +19,23 @@ A personal portfolio website showcasing work, experiments, and projects in 3D mo
 
 ```text
 .
+├── .vscode/
+│   └── settings.json
+├── README.md
 ├── index.html
 ├── all-project.html
+├── vercel.json
 ├── assets/
 │   ├── favicon.svg
 │   └── images/
 │       └── profile/
+│           └── foto-saya.jpg
 ├── css/
 │   ├── style.css
 │   └── projects.css
 ├── js/
 │   ├── main.js
 │   └── projects.js
-└── documents/
 ```
 
 ## Running Locally
