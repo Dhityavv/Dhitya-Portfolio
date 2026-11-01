@@ -5,7 +5,7 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 ## Halaman
 
 - `index.html` — halaman utama portofolio, profil, dan pilihan karya.
-- `projects.html` — arsip proyek dengan tampilan galeri dan daftar. Pilih proyek untuk membuka detailnya.
+- `all-project.html` — arsip proyek dengan tampilan galeri dan daftar. Di Vercel, halaman ini dapat diakses melalui `/all-project`. Pilih proyek untuk membuka detailnya.
 
 ## Fitur
 
@@ -20,7 +20,7 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 ```text
 .
 ├── index.html
-├── projects.html
+├── all-project.html
 ├── assets/
 │   ├── favicon.svg
 │   └── images/
@@ -36,11 +36,11 @@ Website portofolio pribadi untuk menampilkan karya, eksperimen, dan proyek di bi
 
 ## Menjalankan Secara Lokal
 
-Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code.
+Buka `index.html` di browser, atau jalankan folder ini menggunakan ekstensi seperti Live Server di Visual Studio Code. Di Vercel, URL halaman utama menggunakan domain root dan halaman arsip proyek menggunakan `/all-project`.
 
 ## Menambahkan Proyek
 
-Konten proyek di halaman `projects.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detail, kategori, dan statusnya tetap konsisten. Gunakan `data-status="upcoming"` untuk proyek yang belum selesai; proyek lain dihitung sebagai selesai. Isi `data-source` dengan URL source yang tersedia, atau biarkan kosong jika belum dibagikan. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
+Konten proyek di halaman `all-project.html` menggunakan atribut `data-*` pada kartu galeri dan baris daftar. Saat menambahkan proyek, perbarui kedua tampilan agar detail, kategori, dan statusnya tetap konsisten. Gunakan `data-status="upcoming"` untuk proyek yang belum selesai; proyek lain dihitung sebagai selesai. Isi `data-source` dengan URL source yang tersedia, atau biarkan kosong jika belum dibagikan. Jika proyek memiliki gambar, isi `data-image` dengan path gambar tersebut.
 
 Ringkasan jumlah proyek di `index.html` sengaja tetap ringkas. Perbarui angka completed/upcoming di sana saat status proyek berubah.
 

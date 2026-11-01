@@ -124,12 +124,31 @@ h2{font-size:clamp(2.2rem,6vw,5rem);font-weight:700;letter-spacing:-.045em;line-
 .view-all-note{color:var(--mute);font-size:.9rem}
 .project-archive-link{flex-shrink:0}
 .project-archive-link span{font-size:1.05em}
-.project-progress{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.selected-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.selected-project{display:block;min-width:0;color:var(--fg)}
+.selected-project-art{position:relative;display:flex;align-items:flex-end;justify-content:space-between;aspect-ratio:1.72;overflow:hidden;padding:clamp(18px,3vw,34px);border:1px solid var(--line);background:#090909;transition:border-color .25s}
+.selected-project:hover .selected-project-art{border-color:#55534f}
+.selected-project-art::before,.selected-project-art::after{position:absolute;content:"";pointer-events:none}
+.selected-project-art::before{inset:0;background:linear-gradient(140deg,rgba(236,233,226,.035),transparent 42%)}
+.selected-project-art::after{top:0;right:18%;bottom:0;width:1px;background:rgba(236,233,226,.08)}
+.selected-project-art-modeling{background:radial-gradient(ellipse at 68% 50%,rgba(150,132,185,.12),transparent 42%),#090909}
+.selected-project-art-animation{background:radial-gradient(ellipse at 32% 50%,rgba(112,151,164,.12),transparent 42%),#090909}
+.selected-project-index{position:absolute;top:50%;left:50%;color:rgba(236,233,226,.17);font-size:clamp(5rem,12vw,10rem);font-weight:300;letter-spacing:-.09em;line-height:1;transform:translate(-50%,-55%)}
+.selected-project-discipline{position:relative;z-index:1;color:#aaa69e;font-size:.68rem;letter-spacing:.14em}
+.selected-project-rule{position:relative;z-index:1;width:22%;height:1px;background:rgba(236,233,226,.5)}
+.selected-project-info{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 2px 0}
+.selected-project-info>span:first-child{display:grid;gap:3px}
+.selected-project-info strong{font-size:1.08rem;font-weight:600;letter-spacing:-.02em}
+.selected-project-info small,.selected-project-status{color:var(--mute);font-size:.8rem}
+.selected-project-status{white-space:nowrap}
+.project-progress{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:34px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .project-progress-counts{display:flex;gap:clamp(30px,6vw,82px)}
 .project-progress-counts p{display:flex;align-items:baseline;gap:10px;color:var(--mute);font-size:.9rem}
 .project-progress-counts strong{color:var(--fg);font-size:1.7rem;font-weight:550;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
 .project-progress-note{max-width:38ch;color:var(--mute);font-size:.92rem;text-align:right}
 @media(max-width:600px){
+  .selected-project-grid{grid-template-columns:1fr;gap:24px}
+  .selected-project-art{aspect-ratio:1.55}
   .project-progress{align-items:flex-start;flex-direction:column;gap:14px}
   .project-progress-note{text-align:left}
   .project-progress-counts{gap:28px}
